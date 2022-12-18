@@ -1,0 +1,3 @@
+﻿id,name,provider,skill-level
+2,Setting Up Lambda Functions with S3 Event Triggers,AWS,Practitioner
+3,Automatically Processing Data in S3 Using Lambda,AWS,Practitioner
