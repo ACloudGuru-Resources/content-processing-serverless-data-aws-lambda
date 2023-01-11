@@ -16,7 +16,7 @@
           "Next": "UnlockPremiumLessons"
         }
       ]
-    },
+},
 
     "UnlockPremiumCourses": {
       "Type": "Task",
