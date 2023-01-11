@@ -1,33 +1,31 @@
 {
-  "Comment": "Rewards Processor State Machine",
-  "StartAt": "AssessStudent",
-  "States": {
-    "AssessStudent": {
-      "Type": "Choice",
-      "Choices": [
-        {
-          "Variable": "$.Score", 
-          "NumericGreaterThan": 74,
-          "Next": "UnlockPremiumCourses"
-        },
-        {
-          "Variable": "$.Score", 
-          "NumericLessThan": 75,
-          "Next": "UnlockPremiumLessons"
-         }
-      ]
-}, 
-
-      "UnlockPremiumCourses": {
-        "Type": "Task", 
-        "Resource": "Insert the ARN of your UnlockPremiumCoursesFunction", 
-        "End": true
-      }, 
-    "UnlockPremiumLessons":
-    {
-        "Type": "Task", 
-        "Resource": "Insert the ARN of your UnlockPremiumLesson", 
-        "End": true
-      }
-  }
+  "Comment": "Rewards Processor State Machine",
+  "StartAt": "AssessStudent",
+  "States": {
+    "AssessStudent": {
+      "Type": "Choice",
+      "Choices": [
+        {
+          "Variable": "$.Score",
+          "NumericGreaterThan": 74,
+          "Next": "UnlockPremiumCourses"
+        },
+        {
+          "Variable": "$.Score",
+          "NumericLessThan": 75,
+          "Next": "UnlockPremiumLessons"
+        }
+      ]
+    },
+    "UnlockPremiumCourses": {
+      "Type": "Task",
+      "Resource": "Insert the ARN of your UnlockPremiumCoursesFunction",
+      "End": true
+    },
+    "UnlockPremiumLessons": {
+      "Type": "Task",
+      "Resource": "Insert the ARN of your UnlockPremiumLesson",
+      "End": true
+    }
+  }
 }
