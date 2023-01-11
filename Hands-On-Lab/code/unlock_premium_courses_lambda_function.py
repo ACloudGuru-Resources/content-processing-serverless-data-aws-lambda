@@ -17,5 +17,5 @@ def lambda_handler(event, context):
     csv_file = f's3://' + courses_bucket_name + '/' + s3_courses_csv_file_name
     df = wr.s3.read_csv(csv_file)
     response['Courses'] = df.to_dict()
-    
-   return response
+
+    return response
