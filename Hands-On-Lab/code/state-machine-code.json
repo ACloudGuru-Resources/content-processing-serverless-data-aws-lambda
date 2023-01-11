@@ -17,6 +17,7 @@
         }
       ]
     },
+
     "UnlockPremiumCourses": {
       "Type": "Task",
       "Resource": "Insert the ARN of your UnlockPremiumCoursesFunction",
