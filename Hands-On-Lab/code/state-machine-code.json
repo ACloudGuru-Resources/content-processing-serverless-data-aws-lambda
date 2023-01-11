@@ -23,7 +23,8 @@
       "Resource": "Insert the ARN of your UnlockPremiumCoursesFunction",
       "End": true
     },
-    "UnlockPremiumLessons": {
+    "UnlockPremiumLessons": 
+    {
       "Type": "Task",
       "Resource": "Insert the ARN of your UnlockPremiumLesson",
       "End": true
